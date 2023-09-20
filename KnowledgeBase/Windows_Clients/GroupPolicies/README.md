@@ -6,7 +6,7 @@ This policy setting allows an administrator to automatically delete user profile
 
 If you enable this policy setting, the User Profile Service will automatically delete on the next system restart all user profiles on the computer that have not been used within the specified number of days.
 
-** SOLUTION **
+**SOLUTION**
 Navigate to Computer Configuration > Administrative Templates > System > User Profiles and double-click the policy of "Delete user profiles older than a specified number of days on system restart". Set it to Enabled and specify the number of days.
 
 When a user account is deleted, all its data will be removed, including their desktop, downloads, documents, photos, music, and their folder inside C:\Users.
@@ -20,7 +20,7 @@ Deploying extensions via Group Policy consists of two parts:
 1. Retrieve the extension ID and the update URL of the Chrome extension
 2. Enable and configure Chrome extensions in a Group Policy
 
-** SOLUTION **
+**SOLUTION**
 
 ### Retrieve the extension ID and update URL of the Chrome extension
 

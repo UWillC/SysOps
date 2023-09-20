@@ -16,3 +16,12 @@
         data: 7
         type: dword
         state: present
+
+# Example showing flushing handlers on demand, not at end of play
+#- ansible.builtin.template:
+#    src: new.j2
+#    dest: /etc/config.txt
+#  notify: myhandler
+#
+#- name: Force all notified handlers to run at this point, not waiting for normal sync points
+#  ansible.builtin.meta: flush_handlers
